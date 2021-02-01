@@ -1,0 +1,342 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url("background2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	overflow-x: hidden;	
+}
+
+.navbar
+{
+	box-shadow: 0px 2px 30px black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover
+{
+	color: white;
+}
+
+.titre-acceuil
+{
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	font-size: 2.5rem;
+	color: white;
+	margin-top: 8%;
+}
+
+.letter-title
+{
+	color: #7cce9e;
+	background-color: white;
+	border-radius: 7%;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+#titre-chapitre
+{
+	color: #8cbfa1;
+}
+
+.card-body-first
+{
+	margin-top: 5%;
+	padding-bottom: 4%;
+}
+
+.card-body-first .card
+{
+	margin-left: auto;
+    margin-right: auto;
+    border-color: rgba(161, 162, 163, 0.4);
+    border-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px; 
+    background-color: rgba(214, 221, 217, 0.9);    
+}
+
+.card-body
+{
+	text-align: center;
+}
+
+.card-link
+{	
+	color: #577c6b;
+	font-weight: bold;
+}
+
+.card-title
+{
+	font-family: 'Bree Serif', serif;
+}
+
+
+/*.card-text
+{
+	font-family: 'Poppins', sans-serif;
+	color: #4a514e;
+	height: 100px;	
+	overflow: hidden;
+	text-overflow: ellipsis;	
+	white-space: nowrap;
+}*/
+.card_text_specif
+{
+	font-family: 'Poppins', sans-serif;
+	color: #4a514e;
+}
+
+.card-text 
+{
+	font-family: 'Poppins', sans-serif;
+	color: #4a514e;
+  	/* hide text if it more than N lines  */
+  	overflow: hidden;
+  	/* for set '...' in absolute position */
+  	position: relative; 
+  	/* use this value to count block height */
+  	line-height: 1.2em;
+  	/* max-height = line-height (1.2) * lines max number (3) */
+  	max-height: 3.6em; 
+  	/* fix problem when last visible word doesn't adjoin right side  */
+  	text-align: justify;  
+  	/* place for '...' */
+  	padding-right: 0.6em;
+}
+
+.card-text:before 
+{
+  	/* points in the end */
+  	content: '...';
+  	/* absolute position */
+  	position: absolute;
+  	/* set position to right bottom corner of block */
+  	right: 0;
+  	bottom: 0;
+}
+
+
+.link-title-chapter
+{
+	color: #61b684;
+}
+
+.link-bottom-chapitre
+{
+	margin-top: 3%;
+}
+
+a:link:hover
+{
+	text-decoration: none;
+	color: #77a490;
+}
+
+#add-comment
+{
+	font-size: 1.5em;
+	font-family: 'Bree Serif', serif;
+	color: #b39823;
+}
+
+#add-comment:hover
+{
+	color: #d1b642;
+}
+
+#signal
+{
+	color: #ee1139;
+}
+
+#signal:hover
+{
+	color: #f96882;
+}
+
+
+/*-----FORMULAIRES------*/
+
+.form-log-in
+{
+	background-color: white;
+	text-align: center;
+	margin-top: 4%;
+	margin-left: auto;
+    margin-right: auto;
+    width:70%;	
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 20px;
+    border-color: #7cce9e;
+    border-width: 6px;
+    border-style: solid;
+}
+
+#titre
+{
+	border-radius: 10px;
+	width: 70%;
+}
+
+label
+{
+	font-family: 'Poppins', sans-serif;
+	color: #4a514e;
+}
+
+/*---------------TABLE--------------*/
+
+.table
+{
+	margin-top: 4%;
+}
+
+#table-admin-1
+{
+	line-height: 14px;
+}
+
+.admin1
+{
+	height: 15px;
+}
+
+
+/*---------------FOOTER--------------*/
+
+
+/*---------------ECHO--------------*/
+
+.echo-style
+{
+	color: white;
+}
+
+/*---------------RESPONSIVE--------------*/
+
+
+@media screen and (max-width: 1040px){
+
+	#comment
+	{
+		width: 20em;
+	}
+
+}
+
+@media screen and (max-width: 850px){
+
+	#comment
+	{
+		width: 17em;
+	}
+
+}
+
+@media screen and (max-width: 720px){
+
+	#comment
+	{
+		width: 14em;
+	}
+
+}
+
+@media screen and (max-width: 610px){
+
+	#comment
+	{
+		width: 12em;
+	}
+
+	#chapterComment
+	{
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 530px){
+
+	input
+	{
+		width: 10em;
+	}
+
+	#comment
+	{
+		width: 10em;
+	}
+
+}
+
+@media screen and (max-width: 500px){
+
+	table
+	{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+
+	table
+	{
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+
+	input
+	{
+		width: 8em;
+	}
+
+	#comment
+	{
+		width: 8em;
+	}
+
+	table
+	{
+		font-size: 11px;
+	}
+
+	#addComment
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 360px){
+
+	input
+	{
+		width: 6em;
+	}
+
+	#comment
+	{
+		width: 7em;
+	}
+
+	table
+	{
+		font-size: 10px;
+	}
+
+}
+
+
+
